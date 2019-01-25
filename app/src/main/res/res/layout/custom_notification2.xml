@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlMainNotification"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+         >
+
+        <ImageView
+            android:id="@+id/nfImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher2" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/nfImage"
+            android:layout_toRightOf="@+id/nfImage"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nfEventName"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/nfEventAddress"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="@string/service"
+                android:textColor="#8b8b8b"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="5dp"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/kill"
+    android:src="@android:drawable/ic_media_pause"
+    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/nfDecline"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|end"
+
+
+                    android:text="@string/stop"
+                    android:textColor="#676767" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

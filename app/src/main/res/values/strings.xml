@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">1138671626263284</string>
+    <string name="fb_login_protocol_scheme">fb1138671626263284</string>
+    <string name="PublicKey">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqyNcVY/2QYMK1cwsEb3iS2wco0utKHICnfTjKRtfCotPhhyFTpc4TwiD7Hvr6+4ywMhSh2dmsIun+Ms4yX2Bj2atKQJIBlFvEpIPsG8aAf7VyGH0SICuF7Yif7hinvXHIznfJfQa8ZHblt4nkFuJSvXjgNowD/HZ8NQg/dQRkm7BciMkk0fOO2kqKnmnRmRSq7ep3QZ/wa3WTdjV00SV4QFnpliSuHdVlMqpaNlESKo+G9vhnrCIUzTtNDa8IdCIQkTkKe7lMiZN2zXLkDRZC362YZT8aXUYCQ7pQOW7jc+8A9GWV7PkW0MYIKIQbKLlF1/eajPxDaOq/jmcYtNK9wIDAQAB</string>
+    <string name="app_name">Trackeru</string>
+    <string name="action_sign_in_short">Register</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove User</string>
+    <string name="warning"> Warning</string>
+    <string name="change">Are you sure you wish to change? this can not be undone!</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Full name</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Not a member? Get registered now!</string>
+    <string name="btn_link_to_login">Already registered. Login Me!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display username</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="ok">Ok</string>
+    <string name="deleted">Deleted</string>
+    <string name="cancel">Cancel</string>
+    <string name="status">status</string>
+    <string name="battery">low battery, power saving mode activated</string>
+    <string name="auto_check">Auto detect</string>
+    <string name="feed_group">Enter circle id</string>
+    <string name="choose">choose</string>
+    <string name="type_code">Enter code</string>
+    <string name="confirm">Confirm</string>
+    <string name="group_not_ex">Group does not exist!</string>
+    <string name="new_circle">New circle</string>
+    <string name="change_group_pic">press the icon to change picture</string>
+    <string name="empty_name">Name field must not be empty!</string>
+    <string name="share_code">Share this code with your friends</string>
+    <string name="invite">you are invited to my private circle</string>
+    <string name="here">here is the group code:</string>
+    <string name="tra">trackeru real time location</string>
+    <string name="share_using">Share using</string>
+    <string name="share">Share</string>
+    <string name="invitaion_success">Invitation sent successfully</string>
+    <string name="retry">Failed please try again</string>
+    <string name="profile_update">update profile details</string>
+    <string name="username_not_av">Username not available</string>
+    <string name="all_full">All fields must be full!</string>
+    <string name="permission">Please grant permissions!</string>
+    <string name="enter_email">Please enter your registered email address</string>
+    <string name="instructions">We have sent you instructions on resetting your password</string>
+    <string name="no_data">No data</string>
+    <string name="enter_emailb">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="background">Would you like to keep sharing location in the background?</string>
+    <string name="no_exit">No, exit!</string>
+    <string name="map">Map</string>
+    <string name="circles">Circles</string>
+    <string name="need_permission">This app needs the Location permission, please accept to use location functionality</string>
+    <string name="denied">Permission denied</string>
+    <string name="deleted_profile">Your profile is deleted:( Create an account now!</string>
+    <string name="enter_email_address">Not  a vaalid email address!</string>
+    <string name="pass_short">Password too short, enter minimum 6 characters!</string>
+    <string name="user_exist">User already exists sign in to continue</string>
+    <string name="error_sign_in">Error has accured please select a different sign in method</string>
+    <string name="no_network">oops no network please reconnect and try again!</string>
+    <string name="auth_failed2">Authentication failed please try a different sign in method</string>
+    <string name="sign_in_success">Sign in success!</string>
+    <string name="add_users">allows you to add users to your private circle</string>
+    <string name="example">name: for example family/friends/work</string>
+    <string name="share_code2">share code</string>
+    <string name="add_fr_contact">add from contacts</string>
+    <string name="add_frieds">add frends to circle</string>
+    <string name="create_profile">Create new profile</string>
+    <string name="full_name">full name</string>
+    <string name="up_pr_pic">upload profile pic</string>
+    <string name="next">Next</string>
+    <string name="phone">phone</string>
+    <string name="username">username</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="load_direction">load direction</string>
+    <string name="email_sign_in">sign in with email</string>
+    <string name="privacy_policy">privacy policy</string>
+    <string name="no_circles_found">no circles found click + to create</string>
+    <string name="join">join existing circle</string>
+    <string name="create">Create new circle</string>
+    <string name="user_details">Users details</string>
+    <string name="press_group">press group to view details</string>
+    <string name="online">online</string>
+    <string name="circles_display">circles display</string>
+    <string name="view">view</string>
+    <string name="polyline">Polyline</string>
+    <string name="map_type">Map type</string>
+    <string name="sattelite">sattelite</string>
+    <string name="hyb">hybrid</string>
+    <string name="terrain">terrain</string>
+    <string name="standard">standard</string>
+    <string name="settings">settings</string>
+    <string name="direction">Directions</string>
+    <string name="add_firend">Add friend</string>
+    <string name="delete_circle">delete circle</string>
+
+
+    <string-array name="sports_array">
+        <item>Shuttle Badminton</item>
+        <item>Tennis</item>
+        <item>FootBall</item>
+        <item>Basket Ball</item>
+        <item>Table Tennis</item>
+        <item>Chess</item>
+        <item>Hockey</item>
+    </string-array>
+    <string name="agree">By signing in or creating account you agree to our</string>
+    <string name="battery1">Battery</string>
+    <string name="general">general</string>
+    <string name="remove_ads">Remove ads</string>
+    <string name="auto_bat">Auto battery saving mode</string>
+    <string name="pw_m">Power saving mode</string>
+    <string name="profile_set">Profile settings</string>
+    <string name="account">account</string>
+    <string name="user_details2">User Settings</string>
+    <string name="not_valid">Username not valid!</string>
+    <string name="navigation_button">Navigation button</string>
+    <string name="navigate">Press here to navigate</string>
+    <string name="got">GOT IT</string>
+    <string name="manage">Create and manage circles</string>
+    <string name="create_and">join Active Circles by typing code or automatic checking in your SMS messages</string>
+    <string name="billing">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg2V+nocjRb3wBnRa72C7iGcrKRb1Ks1tIRA+iFAT7LRrOajrcEWmtDOShMSHD43LawnaCM4J7+qFJHTVE4G4DJ1GglgiuBLPs+r3Pk3Oxt4sU5UYOJ3gU4G3hEKQnQLqWJzbjvWj7VQAdsj/AuqcvHvRG5U7XhMNzzNd4A2V5ZFHBadIoHqrioSZtbXbsQFIwoObK6DQDARoBPfLfSNqCH0DvLSK13Ehh7OFqC6EBMOo0lvoxNgNsX4M/l+2EbGe4mk8R9WxyXYIioSqnhsbmwW1e5h7MhtzKZJ2rrDR3W/JD7xB+hFoY984abrdT4mxjYwMZx/UgCJET935AptxhQIDAQAB</string>
+    <string name="webapid">470032541918-d9fa7j1ebod2a15ib7qc9tipd0lc8hb5.apps.googleusercontent.com</string>
+    <string name="empty_circle">Group name can not be empty</string>
+    <string name="done">Changes saved successfully</string>
+    <string name="offline">offline</string>
+    <string name="service">Location sharing activated in background</string>
+    <string name="stop">Stop</string>
+    <string name="log">Logging you in..</string>
+    <string name="acc">Checking your account..</string>
+    <string name="allow">Please allow all permissions for app to work!</string>
+    <string name="agree2">Please agree to our privacy policy first!</string>
+    <string name="no_network2">The app will not work without internet connection please connect to the internet!</string>
+    <string name="delete_user">Remove user</string>
+    <string name="create_yours">Create your own private circle and share with others</string>
+    <string name="leave">Leave group</string>
+    <string name="lo">Real Time Location sharing started</string>
+    <string name="contin">Start</string>
+    <string name="stopped">Real Time Location sharing is disabled</string>
+    <string name="circles_intro">You can add users to your circle by clicking the menu icon as in th picture. When done click on the group card to view users.</string>
+    <string name="dont">Do not show again</string>
+    <string name="policy"><h2></h2>
+<span style="font-weight: 400;">Effective date: November 14, 2017</span>
+
+<span style="font-weight: 400;">Welcome to Trackeru ("Trackeru," "we," "us" or "our").</span>
+<ol>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Our Privacy Policy explains how we and some of the companies we work with collect, use, share and protect information in relation to our mobile services, web site, and any software provided on or in connection with Trackeru services (collectively, the "</span><b>Service</b><span style="font-weight: 400;">"), and your choices about the collection and use of your information.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">By using our Service you understand and agree that we are providing a platform for you to post content, including photos, comments and other materials ("</span><b>User Content</b><span style="font-weight: 400;">"), to the Service and to share User Content publicly. This means that other Users may search for, see, use, or share any of your User Content that you make publicly available through the Service, consistent with the terms and conditions of this Privacy Policy and our Terms of Use (which can be found  <a href="http://www.ultimatesoft-il.com/privacy-policy-for-trackeru/">here</a></span><span style="font-weight: 400;"></span><span style="font-weight: 400;">).</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Our Policy applies to all visitors, users, and others who access the Service ("</span><b>Users</b><span style="font-weight: 400;">").</span></li>
+</ol>
+<ol>
+ 	<li><b> INFORMATION WE COLLECT</b></li>
+</ol>
+<span style="font-weight: 400;">We collect the following types of information.</span>
+
+<b>Information you provide us directly:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Your username, password and e-mail address or phone number when you register for an Trackeru account.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Profile information that you provide for your user profile (e.g., first and last name, picture, phone number). This information allows us to help you or others be "found" on Trackeru.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">User Content (e.g., photos, comments, and other materials) that you post to the Service.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Communications between you and Trackeru. For example, we may send you Service-related emails (e.g., account verification, changes/updates to features of the Service, technical and security notices). Note that you may not opt out of Service-related e-mails.</span></li>
+</ul>
+<b>Finding your friends on Trackeru:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">If you choose, you can use our "Find friends" feature to locate other people with Trackeru accounts either through i your contacts list, (ii) third-party social media sites or (iii) through a search of names and usernames on Trackeru.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">If you choose to find your friends through (i) your device\'s contacts list, then Trackeru will access your contacts list to determine whether or not someone associated with your contact is using Trackeru.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">If you choose to find your friends through a (ii) third-party social media site, then you will be prompted to set up a link to the third-party service and you understand that any information that such service may provide to us will be governed by this Privacy Policy.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">If you choose to find your friends (iii) through a search of names or usernames on Trackeru then simply type a name to search and we will perform a search on our Service.</span></li>
+ 	<li style="font-weight: 400;"><b>Note about "Invite Friends" feature:</b><span style="font-weight: 400;"> If you choose to invite someone to the Service through our "Invite friends" feature, you may select a person directly from the contacts list on your device and send a text or email from your personal account. You understand and agree that you are responsible for any charges that apply to communications sent from your device, and because this invitation is coming directly from your personal account, Trackeru does not have access to or control this communication.</span></li>
+</ul>
+<b>Analytics information:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">We use third-party analytics tools to help us measure traffic and usage trends for the Service. These tools collect information sent by your device or our Service, including the web pages you visit, add-ons, and other information that assists us in improving the Service. We collect and use this analytics information with analytics information from other Users so that it cannot reasonably be used to identify any particular individual User.</span></li>
+</ul>
+<b>Cookies and similar technologies:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">When you visit the Service, we may use cookies and similar technologies like pixels, web beacons, and local storage to collect information about how you use Trackeru and provide features to you.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">We may ask advertisers or other partners to serve ads or services to your devices, which may use cookies or similar technologies placed by us or the third party.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">More information is available in our About Cookies section</span></li>
+</ul>
+<b>Log file information:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Log file information is automatically reported by your browser each time you make a request to access (i.e., visit) a web page or app. It can also be provided when the content of the webpage or app is downloaded to your browser or device.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">When you use our Service, our servers automatically record certain log file information, including your web request, Internet Protocol ("IP") address, browser type, referring / exit pages and URLs, number of clicks and how you interact with links on the Service, domain names, landing pages, pages viewed, and other such information. We may also collect similar information from emails sent to our Users which then help us track which emails are opened and which links are clicked by recipients. The information allows for more accurate reporting and improvement of the Service.</span></li>
+</ul>
+<b>Device identifiers:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">When you use a mobile device like a tablet or phone to access our Service, we may access, collect, monitor, store on your device, and/or remotely store one or more "device identifiers." Device identifiers are small data files or similar data structures stored on or associated with your mobile device, which uniquely identify your mobile device. A device identifier may be data stored in connection with the device hardware, data stored in connection with the device\'s operating system or other software, or data sent to the device by Trackeru.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">A device identifier may deliver information to us or to a third party partner about how you browse and use the Service and may help us or others provide reports or personalized content and ads. Some features of the Service may not function properly if use or availability of device identifiers is impaired or disabled.</span></li>
+</ul>
+<b>Metadata:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Metadata is usually technical data that is associated with User Content. For example, Metadata can describe how, when and by whom a piece of User Content was collected and how that content is formatted.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Users can add or may have Metadata added to their User Content including a hashtag (e.g., to mark keywords when you post a photo), geotag (e.g., to mark your location to a photo), comments or other data. This makes your User Content more searchable by others and more interactive. If you geotag your photo or tag your photo using other\'s APIs then, your latitude and longitude will be stored with the photo and searchable (e.g., through a location or map feature) if your photo is made public by you in accordance with your privacy settings.</span></li>
+</ul>
+<ol start="2">
+ 	<li><b> HOW WE USE YOUR INFORMATION</b></li>
+</ol>
+<span style="font-weight: 400;">In addition to some of the specific uses of information we describe in this Privacy Policy, we may use information that we receive to:</span>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">help you efficiently access your information after you sign in</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">remember information so you will not have to re-enter it during your visit or the next time you visit the Service;</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">provide personalized content and information to you and others, which could include online ads or other forms of marketing</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">provide, improve, test, and monitor the effectiveness of our Service</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">develop and test new products and features</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">monitor metrics such as total number of visitors, traffic, and demographic patterns</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">diagnose or fix technology problems</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">automatically update the Trackeru application on your device Trackeru or other Users may run contests, special offers or other events or activities ("Events") on the Service. If you do not want to participate in an Event, do not use the particular Metadata (i.e. hashtag or geotag) associated with that Event.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">In order to access and use the features of the Service, you acknowledge and agree that you will have to provide Trackeru with your mobile phone number. You expressly acknowledge and agree that in order to provide the Service, Trackeru may periodically access your contact list and/or address book on your mobile device to find and keep track of mobile phone numbers of other users of the Service. When providing your mobile phone number, you must provide accurate and complete information. You hereby give your express consent to Trackeru to access your contact list and/or address book for mobile phone numbers in order to provide and use the Service. We do not collect names, addresses or email addresses, just mobile phone numbers. You are solely responsible for the status messages that you submit and that are displayed for your mobile phone number on the Trackeru Service. You must notify Trackeru immediately of any breach of security or unauthorized use of your mobile phone. Although Trackeru will not be liable for your losses caused by any unauthorized use of your account, you may be liable for the losses of Trackeru or others due to such unauthorized use.</span></li>
+</ul>
+<ol start="3">
+ 	<li><b> SHARING OF YOUR INFORMATION</b></li>
+</ol>
+<span style="font-weight: 400;">We will not rent or sell your information to third parties outside Trackeru (or the group of companies of which Trackeru is a part) without your consent, except as noted in this Policy.</span>
+
+<b>Parties with whom we may share your information:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">We may share User Content and your information (including but not limited to, information from cookies, log files, device identifiers, location data, and usage data) with businesses that are legally part of the same group of companies that Trackeru is part of, or that become part of that group ("Affiliates"). Affiliates may use this information to help provide, understand, and improve the Service (including by providing analytics) and Affiliates own services (including by providing you with better and more relevant experiences). But these Affiliates will honor the choices you make about who can see your photos.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">We also may share your information as well as information from tools like cookies, log files, and device identifiers and location data, with third-party organizations that help us provide the Service to you ("Service Providers"). Our Service Providers will be given access to your information as is reasonably necessary to provide the Service under reasonable confidentiality terms.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">We may also share certain information such as cookie data with third-party advertising partners. This information would allow third-party ad networks to, among other things, deliver targeted advertisements that they believe will be of most interest to you.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">We may remove parts of data that can identify you and share anonymized data with other parties. We may also combine your information with other information in a way that it is no longer associated with you and share that aggregated information.</span></li>
+</ul>
+<b>Parties with whom you may choose to share your User Content:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Any information or content that you voluntarily disclose for posting to the Service, such as User Content include your Location Data, becomes available to the public, as controlled by any applicable privacy settings that you set. To change your privacy settings on the Service, please change your profile setting. Once you have shared User Content or made it public, that User Content may be re-shared by others.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Subject to your profile and privacy settings, any User Content that you make public is searchable by other Users and subject to use under our Trackeru API. The use of the Trackeru API is subject to the </span><a href="http://imap-app.com/terms.htmlapi/"><span style="font-weight: 400;">API Terms of Use</span></a><span style="font-weight: 400;"> which incorporates the terms of this Privacy Policy.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">If you remove information that you posted to the Service, copies may remain viewable in cached and archived pages of the Service, or if other Users or third parties using the Trackeru API have copied or saved that information.</span></li>
+</ul>
+<b>What happens in the event of a change of control:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">If we sell or otherwise transfer part or the whole of Trackeru or our assets to another organization (e.g., in the course of a transaction like a merger, acquisition, bankruptcy, dissolution, liquidation), your information such as name and email address, User Content and any other information collected through the Service may be among the items sold or transferred. You will continue to own your User Content. The buyer or transferee will have to honor the commitments we have made in this Privacy Policy.</span></li>
+</ul>
+<b>Responding to legal requests and preventing harm:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">We may access, preserve and share your information in response to a legal request (like a search warrant, court order or subpoena) if we have a good faith belief that the law requires us to do so. This may include responding to legal requests from jurisdictions outside of the United States where we have a good faith belief that the response is required by law in that jurisdiction, affects users in that jurisdiction, and is consistent with internationally recognized standards. We may also access, preserve and share information when we have a good faith belief it is necessary to: detect, prevent and address fraud and other illegal activity; to protect ourselves, you and others, including as part of investigations; and to prevent death or imminent bodily harm. Information we receive about you may be accessed, processed and retained for an extended period of time when it is the subject of a legal request or obligation, governmental investigation, or investigations concerning possible violations of our terms or policies, or otherwise to prevent harm.</span></li>
+</ul>
+<ol start="4">
+ 	<li><b> HOW WE STORE YOUR INFORMATION</b></li>
+</ol>
+<b>Storage and Processing:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Your information collected through the Service may be stored and processed in the United States or any other country in which Trackeru, its Affiliates or Service Providers maintain facilities.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Trackeru, its Affiliates, or Service Providers may transfer information that we collect about you, including personal information across borders and from your country or jurisdiction to other countries or jurisdictions around the world. If you are located in the European Union or other regions with laws governing data collection and use that may differ from U.S. law, please note that we may transfer information, including personal information, to a country and jurisdiction that does not have the same data protection laws as your jurisdiction.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">By registering for and using the Service you consent to the transfer of information to the U.S. or to any other country in which Trackeru, its Affiliates or Service Providers maintain facilities and the use and disclosure of information about you as described in this Privacy Policy.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">We use commercially reasonable safeguards to help keep the information collected through the Service secure and take reasonable steps (such as requesting a unique password) to verify your identity before granting you access to your account. However, Trackeru cannot ensure the security of any information you transmit to Trackeru or guarantee that information on the Service may not be accessed, disclosed, altered, or destroyed.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Please do your part to help us. You are responsible for maintaining the secrecy of your unique password and account information, and for controlling access to emails between you and Trackeru, at all times. Your privacy settings may also be affected by changes the social media services you connect to Trackeru make to their services. We are not responsible for the functionality, privacy, or security measures of any other organization.</span></li>
+</ul>
+<ol start="5">
+ 	<li><b> YOUR CHOICES ABOUT YOUR INFORMATION</b></li>
+</ol>
+<b>Your account information and profile/privacy settings:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Update your account at any time by logging in and changing your profile settings.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Unsubscribe from email communications from us by clicking on the "unsubscribe link" provided in such communications. As noted above, you may not opt out of Service-related communications (e.g., account verification, purchase and billing confirmations and reminders, changes/updates to features of the Service, technical and security notices).</span></li>
+</ul>
+<b>How long we keep your User Content:</b>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Following termination or deactivation of your account, Trackeru, its Affiliates, or its Service Providers may retain information (including your profile information) and User Content for a commercially reasonable time for backup, archival, and/or audit purposes.</span></li>
+</ul>
+<ol start="6">
+ 	<li><b> CHILDREN\'S PRIVACY</b></li>
+</ol>
+<span style="font-weight: 400;">Trackeru does not knowingly collect or solicit any information from anyone under the age of 18 or knowingly allow such persons to register for the Service. The Service and its content are not directed at children under the age of 18. In the event that we learn that we have collected personal information from a child under age 18 without parental consent, we will delete that information as quickly as possible. If you believe that we might have any information from or about a child under 18, please contact us by email:</span>support@ultimatesoft-il.com
+<ol start="7">
+ 	<li><b> OTHER WEB SITES AND SERVICES</b></li>
+</ol>
+<span style="font-weight: 400;">We are not responsible for the practices employed by any websites or services linked to or from our Service, including the information or content contained within them. Please remember that when you use a link to go from our Service to another website or service, our Privacy Policy does not apply to those third-party websites or services. Your browsing and interaction on any third-party website or service, including those that have a link on our website, are subject to that third party\'s own rules and policies. In addition, you agree that we are not responsible and do not have control over any third-parties that you authorize to access your User Content. If you are using a third-party website or service and you allow them to access your User Content you do so at your own risk.</span>
+<ol start="8">
+ 	<li><b> HOW TO CONTACT US ABOUT A DECEASED USER</b></li>
+</ol>
+<span style="font-weight: 400;">In the event of the death of an Trackeru User, please visit us by email:</span>support@ultimatesoft-il.com
+
+<span style="font-weight: 400;">We will usually conduct our communication via email; should we require any other information, we will contact you at the email address you have provided in your request.</span>
+<ol start="9">
+ 	<li><b> HOW TO CONTACT US</b></li>
+</ol>
+<span style="font-weight: 400;">If you have any questions about this Privacy Policy or the Service, please contact us by email: support@ultimatesoft-il.com</span>
+<ol start="10">
+ 	<li><b> CHANGES TO OUR PRIVACY POLICY</b></li>
+</ol>
+<span style="font-weight: 400;">Trackeru may modify or update this Privacy Policy from time to time, so please review it periodically. We may provide you additional forms of notice of modifications or updates as appropriate under the circumstances. Your continued use of Trackeru or the Service after any modification to this Privacy Policy will constitute your acceptance of such modification.</span>
+
+<b>11.Terms of use</b>
+
+you may use our services as you wish but the following use cases are strictly forbidden!:
+<ul>
+ 	<li>Using trackeru as a spying or monitoring users locations secretly.</li>
+ 	<li>Decompile and or copy restricted code from our app.</li>
+</ul>
+<span style="font-weight: 400;">YOUR USE OF THIS REAL TIME ROUTE GUIDANCE APPLICATION IS AT YOUR SOLE RISK. LOCATION DATA MAY NOT BE ACCURATE.</span>
+    </string>
+
+</resources>
