@@ -4,11 +4,11 @@ android {
     compileSdkVersion 26
     buildToolsVersion '26.0.0'
     defaultConfig {
-        applicationId "org.ultimatetoolsil.trackeru"
+        applicationId "com.ultimatesoftil.trackeru"
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode 13
+        versionName "1.1.8"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -17,10 +17,10 @@ android {
             disable 'MissingTranslation'
         }
         release {
-            storeFile file("/Users/mike/Desktop/trackerukeystore.jks")
-            storePassword "311597660mM"
-            keyAlias "trackerukeystore"
-            keyPassword "311597660mM"
+            storeFile file("/Users/mike/Desktop/keystores/trackerkeystore.jks")
+            storePassword "72397239"
+            keyAlias "trackerkeystore"
+            keyPassword "72397239"
         }
     }
 
@@ -45,7 +45,14 @@ android {
         exclude 'META-INF/LGPL2.1'
     }
     sourceSets {
-        main { java.srcDirs = ['src/main/java', 'src/main/java/org/ultimatetoolsil/models'] }
+        main { java.srcDirs = ['src/main/java'] }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+
+        multiDexEnabled  true
     }
 }
 
@@ -80,6 +87,9 @@ dependencies {
     compile 'com.google.firebase:firebase-database:11.6.0'
     compile 'com.nabinbhandari.android:permissions:3.8'
     compile 'info.hoang8f:fbutton:1.0.5'
+    compile  'com.android.volley:volley:1.1.1'
+    compile 'com.android.support:multidex:1.0.0'
+
     // Firebase
     compile 'com.facebook.android:facebook-login:[4,5)'
     compile 'com.snatik:storage:2.1.0'
