@@ -107,6 +107,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.maps.android.PolyUtil;
 import com.google.maps.android.SphericalUtil;
 
+
 import com.nabinbhandari.android.permissions.PermissionHandler;
 import com.nabinbhandari.android.permissions.Permissions;
 import com.squareup.picasso.Picasso;
@@ -121,6 +122,9 @@ import java.util.Map;
 import java.util.Random;
 
 
+import com.startapp.android.publish.adsCommon.AutoInterstitialPreferences;
+import com.startapp.android.publish.adsCommon.StartAppAd;
+import com.startapp.android.publish.adsCommon.StartAppSDK;
 import com.ultimatesoftil.adapters.DrawerAdapter;
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -170,7 +174,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     private boolean started = false;
     public static LocationRequest mLocationRequest;
     public ShowcaseViewBuilder showcaseViewBuilder;
-
     int i = 1;
     private String url;
     private static CheckBox polyline, sattelite, terrain, hybrid, normal;
@@ -215,35 +218,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         //custom marker bitmap and canvas
         final boolean showads = PreferenceManager.getDefaultSharedPreferences(getActivity()).getBoolean("ads", true);
         if (showads) {
-            MobileAds.initialize(getActivity());
-            mAdView1 = getView().findViewById(R.id.map_banner);
-            AdRequest adRequest = new AdRequest.Builder().build();
-
-            mAdView1.loadAd(adRequest);
-            mInterstitialAd = new InterstitialAd(getActivity());
-            mInterstitialAd.setAdUnitId("ca-app-pub-2883974575291426/4343712847");
-            mInterstitialAd.loadAd(new AdRequest.Builder().build());
-
-            mInterstitialAd.setAdListener(new AdListener() {
-                @Override
-                public void onAdClosed() {
-                    // Load the next interstitial.
-                    mInterstitialAd.loadAd(new AdRequest.Builder().build());
-                    final Handler handler = new Handler();
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            if (mInterstitialAd.isLoaded()) {
-                                mInterstitialAd.show();
-                            } else {
-                                Log.d("TAG", "The interstitial wasn't loaded yet.");
-                            }
-                        }
-                    }, addelay);
-                }
-
-            });
-            addelay += 100000;
+            StartAppSDK.init(getActivity(), "201393105", true);
+            StartAppSDK.setUserConsent (getActivity(),
+                    "pas",
+                    System.currentTimeMillis(),
+                    false);
+            StartAppAd.disableSplash();
+            StartAppAd.enableAutoInterstitial();
+            StartAppAd.setAutoInterstitialPreferences(
+                    new AutoInterstitialPreferences()
+                            .setSecondsBetweenAds(60)
+            );
+//            MobileAds.initialize(getActivity());
+//            mAdView1 = getView().findViewById(R.id.map_banner);
+//            AdRequest adRequest = new AdRequest.Builder().build();
+//
+//            mAdView1.loadAd(adRequest);
+//            mInterstitialAd = new InterstitialAd(getActivity());
+//            mInterstitialAd.setAdUnitId("ca-app-pub-2883974575291426/4864000985");
+//            mInterstitialAd.loadAd(new AdRequest.Builder().build());
+//
+//            mInterstitialAd.setAdListener(new AdListener() {
+//                @Override
+//                public void onAdClosed() {
+//                    // Load the next interstitial.
+//                    mInterstitialAd.loadAd(new AdRequest.Builder().build());
+//                    final Handler handler = new Handler();
+//                    handler.postDelayed(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            if (mInterstitialAd.isLoaded()) {
+//                                mInterstitialAd.show();
+//                            } else {
+//                                Log.d("TAG", "The interstitial wasn't loaded yet.");
+//                            }
+//                        }
+//                    }, addelay);
+//                }
+//
+//            });
+//            addelay += 100000;
         }
         nav = (Button) getView().findViewById(R.id.button1);
         boolean firsttime = PreferenceManager.getDefaultSharedPreferences(getActivity()).getBoolean("first", true);
@@ -591,7 +605,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                                         NotificationManager notificationManager = (NotificationManager) getActivity().getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
                                         notificationManager.cancel(1);
                                         getActivity().finishAffinity();
-                                        System.exit(0);
+                                        StartAppAd.onBackPressed(getActivity());
+                                       // System.exit(0);
 
                                     }
                                 })
@@ -797,14 +812,27 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
             @Override
             public boolean onMarkerClick(Marker marker) {
                String str=(String) marker.getTag();
-                String[] splited = str.split("\\s+");
-                if (marker.getTag() != null)
-                    if (splited[1].equals(username)) {
-                        Intent i = new Intent(getActivity(), createprofile.class);
-                        i.putExtra("from", "settings");
-                        startActivity(i);
+               if(marker.getTag()!=null&&marker.getTag().equals(username)){
+                   Intent i = new Intent(getActivity(), createprofile.class);
+                   i.putExtra("from", "settings");
+                   startActivity(i);
+               }else {
+                   try {
+                       String[] splited = str.split("\\s+");
 
-                    }
+                       if (splited[1].equals(username)) {
+                           Intent i = new Intent(getActivity(), createprofile.class);
+                           i.putExtra("from", "settings");
+                           startActivity(i);
+
+                       }
+
+                   }catch (Exception e){
+                       e.printStackTrace();
+                   }
+
+               }
+
                 return false;
             }
         });

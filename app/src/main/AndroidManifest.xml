@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.ultimatesoftil.trackeru">
 
     <permission android:name="com.ultimatesoftil.trackeru.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
@@ -45,7 +46,7 @@
         <activity android:name="com.ultimatesoftil.trackeru.createprofile"/>
         <activity android:name="com.ultimatesoftil.trackeru.Createcircle" android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name="com.ultimatesoftil.trackeru.settings"/>
-        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCwM1V3-5If1N-gZuPS_h5jrPgm13GVg6w"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAaifNW2gCTxEsIOhJhclFKWFElSD0suZ8"/>
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
         <receiver android:name="com.ultimatesoftil.trackeru.BatteryBroadcastReceiver"/>
 
@@ -63,7 +64,13 @@
         <activity android:name="com.ultimatesoftil.trackeru.Signups" android:theme="@style/AppTheme.NoActionBar"/>
 
         <!--<activity android:name="com.ultimatesoftil.trackeru.SmsVerification"/>-->
-
+        <activity
+            android:name="com.inmobi.rendering.InMobiAdActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
+            android:hardwareAccelerated="true"
+            android:resizeableActivity="false"
+            android:theme="@android:style/Theme.NoTitleBar"
+            tools:ignore="UnusedAttribute" />
         <receiver android:name="com.ultimatesoftil.models.NotificationReceiver"/>
         <service android:name="com.ultimatesoftil.models.GPSservice"/>
         <service android:exported="true" android:name="com.ultimatesoftil.trackeru.NetworkSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>

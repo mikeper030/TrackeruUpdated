@@ -157,7 +157,9 @@ public class createprofile extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
+        if(getIntent().getStringExtra("from")!=null){
+            super.onBackPressed();
+        }
     }
 
     @Override

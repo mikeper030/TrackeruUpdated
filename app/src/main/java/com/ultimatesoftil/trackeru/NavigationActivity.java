@@ -43,10 +43,10 @@ public class NavigationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         boolean showads = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("ads", true);
         if(showads) {
-            setContentView(R.layout.activity_navigation_ads);
-            mAdView1 = (AdView) findViewById(R.id.navigation_banner);
-            AdRequest adRequest = new AdRequest.Builder().build();
-            mAdView1.loadAd(adRequest);
+//            setContentView(R.layout.activity_navigation_ads);
+//            mAdView1 = (AdView) findViewById(R.id.navigation_banner);
+//            AdRequest adRequest = new AdRequest.Builder().build();
+//            mAdView1.loadAd(adRequest);
          }else {
             setContentView(R.layout.activity_navigation);
         }

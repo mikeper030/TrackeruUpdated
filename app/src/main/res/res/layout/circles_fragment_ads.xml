@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.inmobi.ads"
     android:id="@+id/frag"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -94,17 +96,30 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true">
 
-        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-
-            android:id="@+id/circles_banner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <com.inmobi.ads.InMobiBanner
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:id="@+id/banner"
+            ads:placementId="plid-1549893272390"
+            ads:refreshInterval="60"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_gravity="bottom|center"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-2883974575291426/8153845782"></com.google.android.gms.ads.AdView>
+            android:layout_gravity="bottom|center"/>
+
+        <!--<com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+
+            <!--android:id="@+id/circles_banner"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_gravity="bottom|center"-->
+            <!--ads:adSize="BANNER"-->
+            <!--ads:adUnitId="ca-app-pub-2883974575291426/5055572678"></com.google.android.gms.ads.AdView>-->
     </RelativeLayout>
 
 

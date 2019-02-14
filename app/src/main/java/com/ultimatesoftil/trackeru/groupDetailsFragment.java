@@ -159,9 +159,9 @@ public class groupDetailsFragment extends Fragment {
             userID = user.getUid();
             boolean showads = PreferenceManager.getDefaultSharedPreferences(getActivity()).getBoolean("ads", true);
             if(showads) {
-                mAdView = getView().findViewById(R.id.group_banner);
-                AdRequest adRequest = new AdRequest.Builder().build();
-                mAdView.loadAd(adRequest);
+//                mAdView = getView().findViewById(R.id.group_banner);
+//                AdRequest adRequest = new AdRequest.Builder().build();
+//                mAdView.loadAd(adRequest);
             }
 
             listView.setAdapter((ListAdapter) usersListAdapter);

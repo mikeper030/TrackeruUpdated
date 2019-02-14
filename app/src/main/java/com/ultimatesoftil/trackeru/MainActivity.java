@@ -36,6 +36,9 @@ import com.ultimatesoftil.adapters.PagerAdapter;
 import com.ultimatesoftil.utilities.PicassoClient;
 import com.ultimatesoftil.utilities.Utils;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 /**
  * Created by mike on 9 Dec 2017.
  */
@@ -208,6 +211,9 @@ public class MainActivity extends AppCompatActivity {
                   .setIcon(android.R.drawable.ic_dialog_alert)
                   .show();
       }
+
+
+
     }
 
 

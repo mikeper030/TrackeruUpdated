@@ -16,6 +16,7 @@ import com.anjlab.android.iab.v3.TransactionDetails;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.location.LocationRequest;
+import com.startapp.android.publish.adsCommon.StartAppAd;
 
 /**
  * Created by mike on 16 Dec 2017.
@@ -35,11 +36,12 @@ public class settings extends PreferenceActivity implements BillingProcessor.IBi
     public void onBackPressed() {
         super.onBackPressed();
        if(showads) {
-           if (mInterstitialAd.isLoaded()) {
-               mInterstitialAd.show();
-           } else {
-               Log.d("TAG", "The interstitial wasn't loaded yet.");
-           }
+//           if (mInterstitialAd.isLoaded()) {
+//               mInterstitialAd.show();
+//           } else {
+//               Log.d("TAG", "The interstitial wasn't loaded yet.");
+//           }
+           StartAppAd.showAd(this);
        }
        }
 
@@ -53,9 +55,9 @@ public class settings extends PreferenceActivity implements BillingProcessor.IBi
         showads= PreferenceManager.getDefaultSharedPreferences(this).getBoolean("ads", true);
         policy=(Preference)getPreferenceManager().findPreference("policy");
         if(showads) {
-            mInterstitialAd = new InterstitialAd(this);
-            mInterstitialAd.setAdUnitId("ca-app-pub-2883974575291426/4343712847");
-            mInterstitialAd.loadAd(new AdRequest.Builder().build());
+//            mInterstitialAd = new InterstitialAd(this);
+//            mInterstitialAd.setAdUnitId("ca-app-pub-2883974575291426/4864000985");
+//            mInterstitialAd.loadAd(new AdRequest.Builder().build());
         }
         autosaver=(SwitchPreference) getPreferenceManager().findPreference("absaver");
          autosaver.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {

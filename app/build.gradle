@@ -5,10 +5,10 @@ android {
     buildToolsVersion '26.0.0'
     defaultConfig {
         applicationId "com.ultimatesoftil.trackeru"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 26
-        versionCode 13
-        versionName "1.1.8"
+        versionCode 14
+        versionName "1.1.9"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -17,7 +17,7 @@ android {
             disable 'MissingTranslation'
         }
         release {
-            storeFile file("/Users/mike/Desktop/keystores/trackerkeystore.jks")
+            storeFile file("C:/Users/Mike/Desktop/keystores/trackerkeystore.jks")
             storePassword "72397239"
             keyAlias "trackerkeystore"
             keyPassword "72397239"
@@ -67,6 +67,8 @@ dependencies {
     compile 'me.everything:providers-stetho:1.0.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.outlander.showcaseview:showcaseview:1.2.0'
+    compile 'com.startapp:inapp-sdk:3.10.0'
+
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.google.android.gms:play-services-location:11.6.0'
     compile 'com.google.android.gms:play-services-maps:11.6.0'
@@ -87,9 +89,8 @@ dependencies {
     compile 'com.google.firebase:firebase-database:11.6.0'
     compile 'com.nabinbhandari.android:permissions:3.8'
     compile 'info.hoang8f:fbutton:1.0.5'
-    compile  'com.android.volley:volley:1.1.1'
+    compile 'com.android.volley:volley:1.1.1'
     compile 'com.android.support:multidex:1.0.0'
-
     // Firebase
     compile 'com.facebook.android:facebook-login:[4,5)'
     compile 'com.snatik:storage:2.1.0'

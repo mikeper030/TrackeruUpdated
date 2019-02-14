@@ -39,18 +39,25 @@
         app:layout_gravity="fill_horizontal"
         android:text="@string/load_direction"
         app:layout_columnSpan="@integer/create_account_pane_column_count" />
-
-    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-
-        android:id="@+id/navigation_banner"
+    <com.startapp.android.publish.ads.banner.Banner
+        android:id="@+id/startAppBanner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-
         android:layout_centerHorizontal="true"
-        app:layout_gravity="bottom|center"
-        ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-2883974575291426/8153845782">
-    </com.google.android.gms.ads.AdView>
+    android:layout_alignParentBottom="true"
+    app:layout_gravity="bottom|center"
+        />
+    <!--<com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+
+        <!--android:id="@+id/navigation_banner"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+
+        <!--android:layout_centerHorizontal="true"-->
+        <!--app:layout_gravity="bottom|center"-->
+        <!--ads:adSize="BANNER"-->
+        <!--ads:adUnitId="ca-app-pub-2883974575291426/5055572678">-->
+    <!--</com.google.android.gms.ads.AdView>-->
 
 </android.support.v7.widget.GridLayout>

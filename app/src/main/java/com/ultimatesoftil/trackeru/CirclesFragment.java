@@ -48,12 +48,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.security.spec.ECField;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.startapp.android.publish.adsCommon.StartAppAd;
 import com.ultimatesoftil.adapters.CirclesListAdapter;
 import com.ultimatesoftil.adapters.DrawerAdapter;
 import com.ultimatesoftil.models.User;
@@ -126,12 +128,12 @@ public class CirclesFragment extends Fragment {
                 menuRed = (FloatingActionMenu) view.findViewById(R.id.menu_red);
                 final boolean showads = PreferenceManager.getDefaultSharedPreferences(getActivity()).getBoolean("ads", true);
                 if (showads) {
-                    mAdView = getView().findViewById(R.id.circles_banner);
-                    AdRequest adRequest = new AdRequest.Builder().build();
-                    mAdView.loadAd(adRequest);
-                    mInterstitialAd = new InterstitialAd(getActivity());
-                    mInterstitialAd.setAdUnitId("ca-app-pub-2883974575291426/4343712847");
-                    mInterstitialAd.loadAd(new AdRequest.Builder().build());
+//                    mAdView = getView().findViewById(R.id.circles_banner);
+//                    AdRequest adRequest = new AdRequest.Builder().build();
+//                    mAdView.loadAd(adRequest);
+//                    mInterstitialAd = new InterstitialAd(getActivity());
+//                    mInterstitialAd.setAdUnitId("ca-app-pub-2883974575291426/4864000985");
+//                    mInterstitialAd.loadAd(new AdRequest.Builder().build());
                 }
                 final Handler handler2 = new Handler();
                 handler2.postDelayed(new Runnable() {
@@ -202,18 +204,18 @@ public class CirclesFragment extends Fragment {
                     @Override
                     public void onClick(View view) {
                         if (showads) {
-                            if (mInterstitialAd.isLoaded()) {
-                                mInterstitialAd.show();
+                            //if (mInterstitialAd.isLoaded()) {
+                                StartAppAd.showAd(getActivity());
                                 Intent i = new Intent(getActivity(), Createcircle.class);
                                 startActivity(i);
                             } else {
                                 Intent i = new Intent(getActivity(), Createcircle.class);
                                 startActivity(i);
                             }
-                        } else {
-                            Intent i = new Intent(getActivity(), Createcircle.class);
-                            startActivity(i);
-                        }
+                      //  } else {
+                        //    Intent i = new Intent(getActivity(), Createcircle.class);
+                         //   startActivity(i);
+                        //}
                     }
                 });
 
@@ -393,6 +395,15 @@ public class CirclesFragment extends Fragment {
 
                 }
             });
+
+        }
+        if(PreferenceManager.getDefaultSharedPreferences(getActivity()).getString("intro", null)==null){
+            try {
+                showcase3();
+
+            }catch (Exception e){
+                e.printStackTrace();
+            }
 
         }
     }
@@ -584,11 +595,7 @@ public class CirclesFragment extends Fragment {
             Log.d("items",String.valueOf(circles.size()));
             listAdapter = new CirclesListAdapter(getActivity(), circles);
             listView.setAdapter((ListAdapter) listAdapter);
-            if(PreferenceManager.getDefaultSharedPreferences(getActivity()).getString("intro", null)==null){
 
-                showcase3();
-
-            }
 
             listView.invalidateViews();
      // drawer listview

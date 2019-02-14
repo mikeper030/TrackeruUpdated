@@ -15,7 +15,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "901051395591-gqkvjmbe1ecgofiohlu11mlc8d6o1c9v.apps.googleusercontent.com",
+          "client_id": "901051395591-ibmd4713u095sm0b8uiu5kg9btjatp2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ultimatesoftil.trackeru",
+            "certificate_hash": "6185c5dd3de64b2205d27b10bd2c2a7a5d240a30"
+          }
+        },
+        {
+          "client_id": "901051395591-05vtp4qskf0pq7n8aahojq0v9r0ie4ri.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901051395591-kdnmbus9098k6kk6db6sph63c03mk5lb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

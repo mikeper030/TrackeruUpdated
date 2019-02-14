@@ -336,7 +336,7 @@ public class Signups extends AppCompatActivity implements GoogleApiClient.Connec
     public void configureSignIn() {
 // Configure sign-in to request the user’s basic profile like name and email
         GoogleSignInOptions options = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getResources().getString(R.string.webapid))
+                .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
 // Build a GoogleApiClient with access to GoogleSignIn.API and the options above.
